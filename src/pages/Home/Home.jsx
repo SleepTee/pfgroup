@@ -1,9 +1,23 @@
 import React from "react";
+import {connect} from "react-redux"
 
-const Home = () => (
-    <div>
-        <h1>Привет, гость!</h1>
-    </div>
-)
 
-export default Home
+class Home extends React.Component {
+
+    render() {
+
+        return (
+            <div>
+                <h1>Привет, {/*LOGIN*/}!</h1>
+            </div>
+        )
+    }
+
+}
+
+const mapStateToProps = (state) =>({
+    users : state
+});
+
+
+export default connect(mapStateToProps,null)(Home)

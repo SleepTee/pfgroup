@@ -4,7 +4,6 @@
     align-items: center;
     height: 60px;
     background-color: cadetblue;
-    padding: 0px 5%;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 ul ,  a {
@@ -21,7 +20,18 @@ nav ul {
     display: flex;
 
 }
-ul li a {
+ul li a  {
     color: darkorchid;
     margin: 30px ;
+}
+
+.modalPopup {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
