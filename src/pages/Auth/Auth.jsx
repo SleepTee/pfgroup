@@ -22,6 +22,7 @@ class Auth extends React.Component {
     addUser = (e) => {
         e.preventDefault();
         this.props.addUsers(this.state.firstName, this.state.lastName, this.state.email, this.state.password, this.state.isAdmin);
+        console.log(this.props.users)
     };
 
 

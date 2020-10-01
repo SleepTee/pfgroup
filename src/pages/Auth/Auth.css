@@ -1,13 +1,7 @@
 .wrapper {
-    height: 91vh;
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #258ea6;
 }
-
 .form-wrapper {
     width: 400px;
     display: flex;

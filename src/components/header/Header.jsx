@@ -5,12 +5,12 @@ import LoginPage from "../../pages/LoginPage/LoginPage";
 
 class Header extends React.Component {
 
-    ShowLogin = () => {
+    /*ShowLogin = () => {
         console.log("Прошло")
         document.getElementById('header_button').addEventListener("click", function() {
         document.querySelector('.modalPopup').style.display = "flex";
     })
-    };
+    };*/
 
     render() {
         console.log()
@@ -20,8 +20,9 @@ class Header extends React.Component {
             <ul className="header__links">
                 <li><Link to="/">Главная</Link></li>
                 <li><Link to="/News">Новости</Link></li>
-                <li><a href="#" id="header_button" onClick={()=>this.ShowLogin()}>Вход</a></li>
-                <li><Link to="/auth">Регистрация</Link></li>
+                {/*<li><a href="#" id="header_button" onClick={()=>this.ShowLogin()}>Вход</a></li>*/}
+                {/*<li><Link to="/auth">Регистрация</Link></li>*/}
+                <li><Link to="/login">Форма входа v2.0</Link></li>
             </ul>
         </nav>
         <div className="modalPopup">
